@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.Main
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         presenter = new MainPresenterImpl(this, new GetQuoteInteractorImpl());
         System.out.println("Hello world!");
+        System.out.println("Hello world_2");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
