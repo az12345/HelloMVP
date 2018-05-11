@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.Main
         Button button = (Button) findViewById(R.id.button);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         presenter = new MainPresenterImpl(this, new GetQuoteInteractorImpl());
-
+        System.out.println("Hello world!");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
